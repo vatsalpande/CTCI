@@ -1,0 +1,1 @@
+Given an array of integers. Find the maximum product of 3 numbers.
