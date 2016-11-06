@@ -22,14 +22,14 @@
      var start = 0;
      var end = dataSet.length -1;
      var valueToSearch = 432;
-     var foundIndex = searchValue(start, end);
+     var foundIndex = searchValue(start, end, valueToSearch);
      if(!foundIndex){
          console.log('The value is not present in the array')
      }else{
          console.log(`The value is present at index ${foundIndex}`)
      }
 
-     function searchValue(start, end){
+     function searchValue(start, end, valueToSearch){
          if(start < end){
              const average = Math.trunc((start + end)/2);
              if(valueToSearch == dataSet[average]){
